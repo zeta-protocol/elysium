@@ -1,0 +1,14 @@
+syntax = "proto3";
+package elysium.elysium;
+
+import "gogoproto/gogo.proto";
+import "elysium/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "elysium/x/elysium/types";
+
+// GenesisState defines the elysium module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package elysium.elysium;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "elysium/x/elysium/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
